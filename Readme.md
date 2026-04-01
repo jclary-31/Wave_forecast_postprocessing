@@ -94,7 +94,7 @@ All variables are related in complex ways, but kalman filter is estimated separa
 
 # Next steps /open considerations
 ## Concerning Kalman filter
-In the current situation x_a is replaced by the regional wave forecast model outputs... for now brutally... which is probably not the way to operates. I am also considering to apply  kalman filter not on the model forecast but on forecast-obs, as done in [this paper](https://idlcc.fc.ul.pt/pdf/Libonati_2008.pdf)
+In the current situation x_a is replaced by the regional wave forecast model outputs... for now brutally... which is probably not the way to operate.  to apply  kalman Additionnaly in [this paper](https://idlcc.fc.ul.pt/pdf/Libonati_2008.pdf), kalman filter to correct forecast at x hour is done on all past observations at x hour. What I do here is very different!
 
 ## Other
 A further challenge arises when a variable is not explicitly modeled—for example, wave parameters that are represented spectrally. In such cases, I would like to reconstruct a time series when model is output is nan, using knowledge from other available forecasts.
